@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 TextView textView;
 String data="The action key performs a \"search\" operation, taking the user to the results of searching for the text the have typed (in whatever context is appropriate). Corresponds to";
 List<String>list=new ArrayList<>();
+String[]arryr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +22,8 @@ List<String>list=new ArrayList<>();
 
     public void geet(View view) {
  data.split(" ");
-textView.setText(data);
+        arryr=data.split(" ");
+textView.setText(arryr.length);
 
     }
 }
